@@ -1,2 +1,2 @@
-# FrontendMentor
-Front - end exercises on "FrontEndMentor" (work paused)
+# Frontend exercises
+My front end practice projects. Based on frontendmentor and frontendpractice.
