@@ -1,0 +1,157 @@
+@import url("https://use.typekit.net/keu4syd.css");
+$pastelYellow: #fbffa7;
+$pastelBlue: #b1c5ff;
+$pastelGreen: #b6ffc0;
+$pastelOrange: #ff764d;
+$pastelPurple: #d5b3ff;
+$blue: #0000ff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100vw;
+
+    font: {
+        family: "futura-pt", sans-serif;
+        weight: 500;
+        style: normal;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        line-height: 1.5;
+    }
+}
+
+#main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.25rem 2.5rem;
+    border-bottom: #F8F8F8 solid 2px;
+
+    .main-nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        svg {
+            margin-right: 2.5rem;
+        }
+    }
+
+    .main-nav-options {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a {
+        padding: 0 .625rem;
+        font-size: 1.25rem;
+    }
+
+    a.main-nav-links-bigger {
+        color: $blue;
+    }
+    a.main-nav-options-smaller {
+        font-size: 1rem;
+    }
+}
+
+#homepage-grid {
+    padding-bottom: 133.3333px;
+
+    .homepage-grid-begin-options {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1.25rem;
+        padding: 1.25rem 2.5rem;
+    }
+
+    .homepage-grid-begin-options:active {
+        color: $pastelOrange;
+    }
+
+    .homepage-hero {
+        margin: 0 7rem;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: {
+            image: url('/assets/homepage-hero.jpg');
+            position: center;
+            size: cover;
+            repeat: no-repeat;
+        }
+
+        h1 {
+            font: {
+                size: 7rem;
+                weight: 500;
+            }
+            color: $pastelOrange
+        }
+    }
+
+    .homepage-grid-promo-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding-top: 15vh;
+    
+        font: {
+            size: 1.875rem;
+        }
+
+        span {
+            color: $blue;
+        }
+
+        .smaller {
+            font: {
+                size: 1.25rem;
+                weight: 400;
+            }
+        }
+    }
+
+    .homepage-grid-promo-abstract {
+        padding-top: 15vh;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+
+        .promo-abs {
+            height: 650px;
+            width: auto;
+            position: absolute;
+            left: 112px;
+            top: 300px;
+        }
+
+        .rect-bg {
+            background-color: $pastelYellow;
+            height: 100vh;
+            width: 130vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
