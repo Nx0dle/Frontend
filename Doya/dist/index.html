@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <div id="overlay" class="overlay hidden"></div>
     <!-- HEADER -->
     <header class="header">
         <div class="container flex">
@@ -33,6 +34,41 @@
             </nav>
 
             <a href="#" class="btn btn--small header__btn">Pobierz aplikację</a>
+
+            <button id="toggle-mobile" class="btn-menu">
+                <img src="img/hamburger.svg" alt="menu">
+            </button>
+
+            <div id="menu-mobile" class="navigation--mobile hidden">
+                <div class="menu">
+                    <div class="flex menu__top">
+                        <p class="menu__top-heading">Menu</p>
+                        <button id="hide-menu" class="btn-menu">
+                            <img src="img/close.svg" alt="close menu">
+                        </button>
+                    </div>
+
+                    <nav class="menu__list">
+                        <ul>
+                            <li>
+                                <a href="#" class="active">Strona główna</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Kontakt</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="menu__cta">
+                        <a href="#" class="btn btn--small">Pobierz aplikację</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <script src="./js/all.js"></script>
