@@ -1,10 +1,14 @@
-$background: #333;
-$color: #00f;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
-body {
-    background-color: $background;
-}
+@import 'base/variables';
+@import 'base/colors';
+@import 'base/mixins';
+@import 'base/utils';
+@import 'base/reset';
+@import 'base/typography';
 
-h1 {
-    color: $color;
-}
+@import 'layout/layout';
+@import 'layout/header';
+
+@import 'components/button';
+@import 'components/navigation';
